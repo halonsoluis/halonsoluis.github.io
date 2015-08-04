@@ -1,10 +1,20 @@
 ---
-layout: default
+layout: layout
 ---
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
+{% include nav_posts.html %}
+<center>
+<header class="intro">
+        <div class="intro-body">
+            <div class="container">
+           <br/><br/><br/>
+           <h1>   <br/><br/> </h1>              
+  </div></div>
+</header>
+ <!-- Posts Section -->
+    <section id="post" class="content-section text-center">
+ <article class="post">
+ <h1>{{ page.title }}</h1>
   <div class="entry">
     {{ content }}
   </div>
@@ -15,3 +25,7 @@ layout: default
 
   {% include disqus.html %}
 </article>
+                
+        </div>
+    </section>
+</center>
