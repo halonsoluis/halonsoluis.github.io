@@ -2,19 +2,40 @@
 # This file contains configuration flags to customize your site
 #
 
+
+# Color settings
+color:
+  primary-dark: '#000000'
+  links: '#219ab3'
+
+# Footer settings
+footer: Hugo Alonso Luis
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: https://twitter.com/SBootstrap
+  - title: facebook
+    url:
+  - title: stack-overflow
+    url: http://stackoverflow.com/questions/tagged/jekyll
+  - title: bitbucket
+    url: http://bitbucket.org/jekyll
+  - title: github
+    url: https://github.com/IronSummitMedia/startbootstrap
+
 # Name of your site (displayed in the header)
 name: Hugo Alonso
-
+title: Hugo Alonso
 # Short bio or description (displayed in the header)
-description: 
-
+description: Software Engineer
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/10271728?v=3&u=c59c383acf4a2d8befa850d43c6ad8e861bcd64c&s=140
 
 #
 # Flags below are optional
 #
-
+email: hugoalonsoluis@gmail.com
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
@@ -51,9 +72,12 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-markdown: redcarpet
+# Build settings
+markdown: kramdown
+permalink: pretty
+#markdown: redcarpet
 highlighter: pygments
-permalink: /:title/
+#permalink: /:title/
 
 # The release of Jekyll Now that you're using
 version: v1.1.0

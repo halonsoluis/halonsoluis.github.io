@@ -1,0 +1,26 @@
+    <!-- Posts Section -->
+    <section id="posts" class="content-section text-center">
+        <div class="posts-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    
+                     
+                    <div class="posts">
+					  {% for post in site.posts %}
+                      <br/><br/><br/>
+					    <article class="post">
+
+					      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+
+					      <div class="entry">
+					        {{ post.excerpt }}
+					      </div>
+                            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+					    </article>
+                        
+					  {% endfor %}
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
